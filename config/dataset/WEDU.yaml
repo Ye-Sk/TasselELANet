@@ -1,0 +1,18 @@
+# -----------------------Dataset Configure----------------------- #
+train: data/WEDU/train
+test: data/WEDU/test
+names: [ 'wheat' ] # class names
+
+# -----------------------Optimizer Configure----------------------- #
+ilr: 0.01  # initial learning rate (SGD=1E-2, AdamW=1E-3)
+optimizer: SGD  # optimizer (SGD, AdamW)
+momentum: 0.937  # SGD momentum/AdamW beta1
+weight_decay: 0.0005  # optimizer weight decay 5e-4
+
+# -----------------------Data Augmentation----------------------- #
+hsv_h: 0.01 # Image HSV-Hue augmentation (fraction)
+hsv_s: 0.5 # Image HSV-Saturation augmentation (fraction)
+hsv_v: 0.2 # Image HSV-Value augmentation (fraction)
+scale: 0.5 # Image scale augmentation (+/- gain)
+fliplr: 0.5 # Image horizontal flip probability
+mosaic: 1.0 # Image mosaic augmentation probability (0/0.5/1.0)
