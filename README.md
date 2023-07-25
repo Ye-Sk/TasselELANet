@@ -3,7 +3,7 @@
   <img src="https://github.com/Ye-Sk/TasselELANet/blob/master/data/infer.jpg"/>
 </p>  
 
-**The resources in this repository are implemented in this paper :**  
+**The resources in this repository are implemented in this paper：**  
 [___TasselELANet: A Vision Foundation Model for Plant Detection and Counting with Efficient Layer Aggregation Network___](https://v.qq.com/x/cover/mpqzavrt4qvdstw/d00148c52qt.html?ptag=360kan.cartoon.free)
 
 ## Quantitative results
@@ -15,21 +15,20 @@
 
 ## Installation
 1. The code we implement is based on PyTorch 1.12 and Python 3.8, please refer to the file `requirements.txt` to configure the required environment.      
-2. To convenient install the required environment dependencies, you can also use the following command look like this :     
+2. To convenient install the required environment dependencies, you can also use the following command look like this：    
 ~~~
 $ pip install -r requirements.txt 
 ~~~
 
 ## Training and Data Preparation
 * I have already reorganized three plant datasets, you just need to move them to the specified path.
-  
-#### You can download the Maize Tassels Detection and Counting (MTDC), Wheat Ears Detection Update (WEDU), and Diverse Rice Panicle Detection (DRPD) datasets from
-|Dataset|Train|Test|Baidu|Google|Source|
-| :----: | :----: | :----: | :----: | :----: | :----: |
-|MrMT|300|368|[Baidu](https://pan.baidu.com/s/1uoh9EhC3COEt7TqC5pmA0w?pwd=plat)|[Google](https://drive.google.com/file/d/19cRDCZ4sOSv_DAyecLyOTDAegPXiIMIT/view?usp=sharing)|[Source](https://github.com/Ye-Sk/MrMT)|
-|WED|165|71|[Baidu](https://pan.baidu.com/s/1pMQB-YNViPwRfdWtryyrFw?pwd=plat)|[Google](https://drive.google.com/file/d/1HRWXaR_Gid7-yEQbG_6wAigQ_m93bqHh/view?usp=sharing)|[Source](https://github.com/simonMadec/Wheat-Ears-Detection-Dataset)|
-|DRPD|200|220|[Baidu](https://pan.baidu.com/s/1pMQB-YNViPwRfdWtryyrFw?pwd=plat)|[Google](https://drive.google.com/file/d/1duBg8yLWAs-LRtTAEFkSi3La3kBQe85_/view?usp=sharing)|[Source](https://github.com/changcaiyang/Panicle-AI)|
-* Move the dataset directly into the `data` folder, the correct data format looks like this :
+#### You can download the Maize Tassels Detection and Counting (MTDC), Wheat Ears Detection Update (WEDU), and Diverse Rice Panicle Detection (DRPD) datasets from：
+|Dataset|Baidu|Google|Source|
+| :----: | :----: | :----: | :----: |
+|MTDC|[Baidu](https://pan.baidu.com/s/1uoh9EhC3COEt7TqC5pmA0w?pwd=plat)|[Google](https://drive.google.com/file/d/19cRDCZ4sOSv_DAyecLyOTDAegPXiIMIT/view?usp=sharing)|[Source](https://github.com/Ye-Sk/MrMT)|
+|WEDU|[Baidu](https://pan.baidu.com/s/1pMQB-YNViPwRfdWtryyrFw?pwd=plat)|[Google](https://drive.google.com/file/d/1HRWXaR_Gid7-yEQbG_6wAigQ_m93bqHh/view?usp=sharing)|[Source](https://github.com/simonMadec/Wheat-Ears-Detection-Dataset)|
+|DRPD|[Baidu](https://pan.baidu.com/s/1pMQB-YNViPwRfdWtryyrFw?pwd=plat)|[Google](https://drive.google.com/file/d/1duBg8yLWAs-LRtTAEFkSi3La3kBQe85_/view?usp=sharing)|[Source](https://github.com/changcaiyang/Panicle-AI)|
+* Move the dataset directly into the `data` folder, the correct data format looks like this：
 ~~~
 $./data/MTDC (or WEDU, or DRPD)
 ├──── train
@@ -40,7 +39,7 @@ $./data/MTDC (or WEDU, or DRPD)
 │    └──── labels
 ~~~
 ~~~
-* Run the following command to start training on the MTDC/WEDU/DRPD dataset :
+* Run the following command to start training on the MTDC/WEDU/DRPD dataset：
 ~~~
 $ python train.py --data config/dataset/MTDC.yaml    # train MTDC
                          config/dataset/WEDU.yaml    # train WEDU
@@ -48,7 +47,7 @@ $ python train.py --data config/dataset/MTDC.yaml    # train MTDC
 ~~~
 # Evaluation
 You need to specify your training model's path for the '--weights' parameter.
-* Run the following command to evaluate the results :  
+* Run the following command to evaluate the results： 
 ~~~
 $ python val.py --weights (your training weights (last.pt)) --data config/dataset/MTDC.yaml    # eval MTDC
                                                                    config/dataset/WEDU.yaml    # eval WEDU
@@ -57,7 +56,7 @@ $ python val.py --weights (your training weights (last.pt)) --data config/datase
 # Inference
 You need to specify your training model's path for the '--weights' parameter.  
 Also, specify the source path you want to infer for the '--source' parameter.
-* Run the following command on a variety of sources :
+* Run the following command on a variety of sources：
 ~~~
 $ python infer.py --weights (your training weights (last.pt)) --source (your source path (file/dir/URL/0(webcam)))
 ~~~
