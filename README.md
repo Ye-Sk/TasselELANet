@@ -44,7 +44,7 @@ $ python train.py --data config/dataset/MTDC.yaml    # train MTDC
                          config/dataset/WEDU.yaml    # train WEDU
                          config/dataset/DRPD.yaml    # train DRPD
 ~~~
-# Evaluation and Inference
+## Evaluation and Inference
 * Move your trained `last.pt` model to the `data/weights` directory, the correct data format looks like this：
 ~~~
 $./data/weights
@@ -71,6 +71,16 @@ $ python infer.py --count --data config/dataset/MTDC.yaml    # count maize tasse
 
 ## Build your own dataset
 **To train your own datasets on this framework, we recommend that :**  
-* Annotate your data with the image annotation tool [LabelIMG](https://github.com/heartexlabs/labelImg) to generate `.txt` labels in YOLO format.   
-* Refer to the `config/dataset/MTDC.yaml` example to configure your own hyperparameters file. 
-* Based on the `train.py` code example configure your own training parameters.
+1. Annotate your data with the image annotation tool [LabelIMG](https://github.com/heartexlabs/labelImg) to generate `.txt` labels in YOLO format.   
+2. Refer to the `config/dataset/MTDC.yaml` example to configure your own hyperparameters file. 
+3. Based on the `train.py` code example configure your own training parameters.
+
+## Citation
+If you find this work or code useful for your research, please cite this, Thank you!
+~~~
+@article{ye2023TasselELANet,  
+  title={TasselELANet: A Vision Foundation Model for Plant Detection and Counting with Efficient Layer Aggregation Network},  
+  author={Ye, Jianxiong and Yu, Zhenghong and Wang, Yangxu and Lu, Dunlu and Zhou, Huabing and Shengjie Liufu}, 
+  year={2023}
+}
+~~~
