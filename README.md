@@ -25,9 +25,9 @@ $ pip install -r requirements.txt
 #### You can download the Maize Tassels Detection and Counting (MTDC), Wheat Ears Detection Update (WEDU), and Diverse Rice Panicle Detection (DRPD) datasets from：
 |Dataset|Baidu|Google|Source|
 | :----: | :----: | :----: | :----: |
-|MTDC|[Baidu](https://pan.baidu.com/s/1uoh9EhC3COEt7TqC5pmA0w?pwd=plat)|[Google](https://drive.google.com/file/d/19cRDCZ4sOSv_DAyecLyOTDAegPXiIMIT/view?usp=sharing)|[Source](https://github.com/Ye-Sk/MrMT)|
-|WEDU|[Baidu](https://pan.baidu.com/s/1pMQB-YNViPwRfdWtryyrFw?pwd=plat)|[Google](https://drive.google.com/file/d/1HRWXaR_Gid7-yEQbG_6wAigQ_m93bqHh/view?usp=sharing)|[Source](https://github.com/simonMadec/Wheat-Ears-Detection-Dataset)|
-|DRPD|[Baidu](https://pan.baidu.com/s/1pMQB-YNViPwRfdWtryyrFw?pwd=plat)|[Google](https://drive.google.com/file/d/1duBg8yLWAs-LRtTAEFkSi3La3kBQe85_/view?usp=sharing)|[Source](https://github.com/changcaiyang/Panicle-AI)|
+|MTDC|[Baidu](https://pan.baidu.com/s/16ADem84bvIkqLas-wg4kvQ?pwd=zrf6)|[Google](https://drive.google.com/file/d/14iZrdaQ5FZz8nbTiqlx3-BPh0aYiAbxP/view?usp=sharing)|[Source](https://github.com/poppinace/mtdc)|
+|WEDU|[Baidu](https://pan.baidu.com/s/14y6cV2ukmm4nYq56lPG-Ww?pwd=jtb0)|[Google](https://drive.google.com/file/d/1HRWXaR_Gid7-yEQbG_6wAigQ_m93bqHh/view?usp=sharing)|[Source](https://github.com/simonMadec/Wheat-Ears-Detection-Dataset)|
+|DRPD|[Baidu](https://pan.baidu.com/s/1bngkwmA-ghPJCKL5ZcrjyA?pwd=a3st)|[Google](https://drive.google.com/file/d/1duBg8yLWAs-LRtTAEFkSi3La3kBQe85_/view?usp=sharing)|[Source](https://github.com/changcaiyang/Panicle-AI)|
 * Move the dataset directly into the `data` folder, the correct data format looks like this：
 ~~~
 $./data/MTDC (or WEDU, or DRPD)
