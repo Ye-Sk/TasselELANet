@@ -38,7 +38,6 @@ $./data/MTDC (or WEDU, or DRPD)
 │    ├──── images
 │    └──── labels
 ~~~
-~~~
 * Run the following command to start training on the MTDC/WEDU/DRPD dataset：
 ~~~
 $ python train.py --data config/dataset/MTDC.yaml    # train MTDC
