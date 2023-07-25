@@ -21,7 +21,7 @@ $ pip install -r requirements.txt
 ~~~
 
 ## Training and Data Preparation
-#### I have already reorganized three plant datasets, you just need to move them to the specified path.
+#### I have already reorganized three plant datasets, you just need to move them to the specified path. 
 * You can download the Maize Tassels Detection and Counting (MTDC), Wheat Ears Detection Update (WEDU), and Diverse Rice Panicle Detection (DRPD) datasets from：
 
 |Dataset|Baidu|Google|Source|
@@ -39,7 +39,7 @@ $./data/MTDC (or WEDU, or DRPD)
 │    ├──── images
 │    └──── labels
 ~~~
-* Run the following command to start training on the MTDC/WEDU/DRPD dataset：
+* Run the following command to start training on the `MTDC/WEDU/DRPD` dataset：
 ~~~
 $ python train.py --data config/dataset/MTDC.yaml    # train MTDC
                          config/dataset/WEDU.yaml    # train WEDU
@@ -51,7 +51,7 @@ $ python train.py --data config/dataset/MTDC.yaml    # train MTDC
 $./data/weights
 ├──── last.pt
 ~~~
-* Run the following command to evaluate the results on the MTDC/WEDU/DRPD dataset： 
+* Run the following command to evaluate the results on the `MTDC/WEDU/DRPD` dataset： 
 ~~~
 $ python val.py --data config/dataset/MTDC.yaml    # eval MTDC
                        config/dataset/WEDU.yaml    # eval WEDU
