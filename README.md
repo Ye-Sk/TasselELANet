@@ -27,7 +27,8 @@ $ pip install -r requirements.txt
 |Dataset|Baidu|Google|Source|
 | :----: | :----: | :----: | :----: |
 |MTDC|[Baidu](https://pan.baidu.com/s/16ADem84bvIkqLas-wg4kvQ?pwd=zrf6)|[Google](https://drive.google.com/file/d/14iZrdaQ5FZz8nbTiqlx3-BPh0aYiAbxP/view?usp=sharing)|[Source](https://github.com/poppinace/mtdc)|
-|WEDU|[Baidu](https://pan.baidu.com/s/14y6cV2ukmm4nYq56lPG-Ww?pwd=jtb0)|[Google](https://drive.google.com/file/d/1HRWXaR_Gid7-yEQbG_6wAigQ_m93bqHh/view?usp=sharing)|[Source](https://github.com/simonMadec/Wheat-Ears-Detection-Dataset)|
+|WEDU|[Baidu](https://pan.baidu.com/s/14y6cV2ukmm4nYq56lPG-Ww?pwd=jtb0)|[Google](https://drive.google.com/file/d/1jsvLSJJzsVUq2anZE0aznaKkACv5lcwi/view?usp=sharing
+)|[Source](https://github.com/simonMadec/Wheat-Ears-Detection-Dataset)|
 |DRPD|[Baidu](https://pan.baidu.com/s/1bngkwmA-ghPJCKL5ZcrjyA?pwd=a3st)|[Google](https://drive.google.com/file/d/1duBg8yLWAs-LRtTAEFkSi3La3kBQe85_/view?usp=sharing)|[Source](https://github.com/changcaiyang/Panicle-AI)|
 * Move the dataset directly into the `data` folder, the correct data format looks like this：
 ~~~
