@@ -45,7 +45,7 @@ $ python train.py --data config/dataset/MTDC.yaml    # train MTDC
                          config/dataset/DRPD.yaml    # train DRPD
 ~~~
 # Evaluation and Inference
-* Move your trained `last.pt` model to the `data/weights` directory, the correct data format looks like this:
+* Move your trained `last.pt` model to the `data/weights` directory, the correct data format looks like this：
 ~~~
 $./data/weights
 ├──── last.pt
@@ -58,13 +58,19 @@ $ python val.py --data config/dataset/MTDC.yaml    # eval MTDC
 ~~~
 * Run the following command on a variety of sources：
 ~~~
-$ python infer.py --save-img --source (your source path (file/dir/URL/0(webcam))) --data config/dataset/MTDC.yaml  # detect maize tassels
-                                                                                         config/dataset/WEDU.yaml  # detect wheat ears
-                                                                                         config/dataset/DRPD.yaml  # detect rice panicle
+$ python infer.py --save-img --source (your source path (file/dir/URL/0(webcam))) --data config/dataset/MTDC.yaml    # detect maize tassels
+                                                                                         config/dataset/WEDU.yaml    # detect wheat ears
+                                                                                         config/dataset/DRPD.yaml    # detect rice panicle
 ~~~
 * Run the following command to evaluate the counting performance：
 ~~~
-$ python infer.py --count --data config/dataset/MTDC.yaml  # count maize tassels
-                                 config/dataset/WEDU.yaml  # count wheat ears
-                                 config/dataset/DRPD.yaml  # count rice panicle
+$ python infer.py --count --data config/dataset/MTDC.yaml    # count maize tassels
+                                 config/dataset/WEDU.yaml    # count wheat ears
+                                 config/dataset/DRPD.yaml    # count rice panicle
 ~~~
+
+## Build your own dataset
+**To train your own datasets on this framework, we recommend that :**  
+* Annotate your data with the image annotation tool [LabelIMG](https://github.com/heartexlabs/labelImg) to generate `.txt` labels in YOLO format.   
+* Refer to the `config/dataset/MTDC.yaml` example to configure your own hyperparameters file. 
+* Based on the `train.py` code example configure your own training parameters.
