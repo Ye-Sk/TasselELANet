@@ -44,22 +44,19 @@ $ python train.py --data config/dataset/MTDC.yaml    # train MTDC
                          config/dataset/WEDU.yaml    # train WEDU
                          config/dataset/DRPD.yaml    # train DRPD
 ~~~
-# Evaluation
-Move your trained `last.pt` model to the `data/weights` directory, the correct data format looks like this:
+# Evaluation and Inference
+* Move your trained `last.pt` model to the `data/weights` directory, the correct data format looks like this:
 ~~~
 $./data/weights
 ├──── last.pt
 ~~~
-* Run the following command to evaluate the results： 
+* Run the following command to evaluate the results on the MTDC/WEDU/DRPD dataset： 
 ~~~
-$ python val.py --weights (your training weights (last.pt)) --data config/dataset/MTDC.yaml    # eval MTDC
-                                                                   config/dataset/WEDU.yaml    # eval WEDU
-                                                                   config/dataset/DRPD.yaml    # eval DRPD
+$ python val.py --data config/dataset/MTDC.yaml    # eval MTDC
+                       config/dataset/WEDU.yaml    # eval WEDU
+                       config/dataset/DRPD.yaml    # eval DRPD
 ~~~
-# Inference
-You need to specify your training model's path for the '--weights' parameter.  
-Also, specify the source path you want to infer for the '--source' parameter.
 * Run the following command on a variety of sources：
 ~~~
-$ python infer.py --weights (your training weights (last.pt)) --source (your source path (file/dir/URL/0(webcam)))
+$ python infer.py --source (your source path (file/dir/URL/0(webcam)))
 ~~~
