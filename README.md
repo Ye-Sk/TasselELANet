@@ -45,7 +45,11 @@ $ python train.py --data config/dataset/MTDC.yaml    # train MTDC
                          config/dataset/DRPD.yaml    # train DRPD
 ~~~
 # Evaluation
-You need to specify your training model's path for the '--weights' parameter.
+Move your trained `last.pt` model to the `data/weights` directory, the correct data format looks like this:
+~~~
+$./data/weights
+├──── last.pt
+~~~
 * Run the following command to evaluate the results： 
 ~~~
 $ python val.py --weights (your training weights (last.pt)) --data config/dataset/MTDC.yaml    # eval MTDC
