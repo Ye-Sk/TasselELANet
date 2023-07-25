@@ -58,5 +58,13 @@ $ python val.py --data config/dataset/MTDC.yaml    # eval MTDC
 ~~~
 * Run the following command on a variety of sources：
 ~~~
-$ python infer.py --source (your source path (file/dir/URL/0(webcam)))
+$ python infer.py --save-img --source (your source path (file/dir/URL/0(webcam))) --data config/dataset/MTDC.yaml  # detect maize tassels
+                                                                                         config/dataset/WEDU.yaml  # detect wheat ears
+                                                                                         config/dataset/DRPD.yaml  # detect rice panicle
+~~~
+* Run the following command to evaluate the counting performance：
+~~~
+$ python infer.py --count --data config/dataset/MTDC.yaml  # count maize tassels
+                                 config/dataset/WEDU.yaml  # count wheat ears
+                                 config/dataset/DRPD.yaml  # count rice panicle
 ~~~
