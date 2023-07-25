@@ -21,8 +21,9 @@ $ pip install -r requirements.txt
 ~~~
 
 ## Training and Data Preparation
-* I have already reorganized three plant datasets, you just need to move them to the specified path.
-#### You can download the Maize Tassels Detection and Counting (MTDC), Wheat Ears Detection Update (WEDU), and Diverse Rice Panicle Detection (DRPD) datasets from：
+#### I have already reorganized three plant datasets, you just need to move them to the specified path.
+* You can download the Maize Tassels Detection and Counting (MTDC), Wheat Ears Detection Update (WEDU), and Diverse Rice Panicle Detection (DRPD) datasets from：
+
 |Dataset|Baidu|Google|Source|
 | :----: | :----: | :----: | :----: |
 |MTDC|[Baidu](https://pan.baidu.com/s/16ADem84bvIkqLas-wg4kvQ?pwd=zrf6)|[Google](https://drive.google.com/file/d/14iZrdaQ5FZz8nbTiqlx3-BPh0aYiAbxP/view?usp=sharing)|[Source](https://github.com/poppinace/mtdc)|
@@ -76,7 +77,7 @@ $ python infer.py --count --data config/dataset/MTDC.yaml    # count maize tasse
 3. Based on the `train.py` code example configure your own training parameters.
 
 ## Citation
-If you find this work or code useful for your research, please cite this, Thank you!
+#### If you find this work or code useful for your research, please cite this, Thank you!
 ~~~
 @article{ye2023TasselELANet,  
   title={TasselELANet: A Vision Foundation Model for Plant Detection and Counting with Efficient Layer Aggregation Network},  
