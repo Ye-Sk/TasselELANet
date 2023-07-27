@@ -26,7 +26,7 @@ def set_logging(verbose):
     logging.basicConfig(level=level, format="%(message)s")
 
 set_logging(True)
-logger = logging.getLogger('PlantBiCNet')
+logger = logging.getLogger('TasselELANet')
 
 def get_nearest_divisible(x, divisor):
     # Returns nearest x divisible by divisor
