@@ -17,7 +17,7 @@ from models.utils.helper import infer_mode, crement_path, print_info, logger, \
 def parse_opt():
     parser = argparse.ArgumentParser()
     parser.add_argument('--weights', nargs='+', type=str, default=r'data/weights/last.pt', help='model path')
-    parser.add_argument('--source', type=str, default=r'data/MTDC/train/images', help='file/dir/URL/0(webcam)')
+    parser.add_argument('--source', type=str, default=r'data/MTDC/test/images', help='file/dir/URL/0(webcam)')
     parser.add_argument('--imgsz', nargs='+', type=int, default=[608, 608], help='inference size h,w')
     parser.add_argument('--data', type=str, default='config/dataset/MTDC.yaml', help='config.yaml path')
     parser.add_argument('--conf-thres', type=float, default=0.50, help='confidence threshold')
