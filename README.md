@@ -77,7 +77,7 @@ $ python infer.py --count --data config/dataset/MTDC.yaml    # count maize tasse
 3. Based on the `train.py` code example configure your own training parameters.
 
 ## Citation
-#### If you find this work or code useful for your research, please cite this, Thank you!
+#### If you find this work or code useful for your research, please cite this, Thank you!🤗
 ~~~
 @article{ye2023TasselELANet,  
   title={TasselELANet: A Vision Foundation Model for Plant Detection and Counting with Efficient Layer Aggregation Network},  
