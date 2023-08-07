@@ -82,7 +82,7 @@ def trainer(opt):
         del ckpt, csd
     except:
         model = Model(cfg, ch=3, nc=nc).to(device)  # create
-        logger.warning(f'WARNING ⚠️ --Failed to initialize weights, No such file or directory: {weights}')
+        logger.warning(f'WARNING ⚠️ --Failed to initialize weights: {weights}')
 
     # Image size
     gs = max(int(model.stride.max()), 32)  # grid size (max stride)
