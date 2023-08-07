@@ -4,7 +4,7 @@
 </p>  
 
 **The resources in this repository are implemented in this paper：**  
-[___TasselELANet: A Vision Foundation Model for Plant Detection and Counting with Efficient Layer Aggregation Network___](https://v.qq.com/x/cover/mpqzavrt4qvdstw/d00148c52qt.html?ptag=360kan.cartoon.free)
+[___TasselELANet: A Vision Foundation Model for Plant Recognition  with Efficient Layer Aggregation Network___](https://v.qq.com/x/cover/mpqzavrt4qvdstw/d00148c52qt.html?ptag=360kan.cartoon.free)
 
 ## Quantitative results
 |Dataset|AP<sub>50</sub>|AP<sub>50-95</sub>|MAE|RMSE|R<sup>2</sup>|
@@ -80,7 +80,7 @@ $ python infer.py --count --data config/dataset/MTDC.yaml    # count maize tasse
 #### If you find this work or code useful for your research, please cite this, Thank you!🤗
 ~~~
 @article{ye2023TasselELANet,  
-  title={TasselELANet: A Vision Foundation Model for Plant Detection and Counting with Efficient Layer Aggregation Network},  
+  title={TasselELANet: A Vision Foundation Model for Plant Recognition with Efficient Layer Aggregation Network},  
   author={Ye, Jianxiong and Yu, Zhenghong and Wang, Yangxu and Lu, Dunlu and Zhou, Huabing and Shengjie Liufu}, 
   year={2023}
 }
