@@ -91,7 +91,6 @@ def random_perspective(im, targets=(), scale=.1, border=(0, 0)):
     # Transform label coordinates
     n = len(targets)
     if n:
-        new = np.zeros((n, 4))
         xy = np.ones((n * 4, 3))
         xy[:, :2] = targets[:, [1, 2, 3, 4, 1, 4, 3, 2]].reshape(n * 4, 2)
         xy = xy @ M.T
