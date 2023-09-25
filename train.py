@@ -209,8 +209,10 @@ def trainer(opt):
                 'optimizer': optimizer.state_dict(),
                 'opt': vars(opt),}
 
-            torch.save(ckpt, best)
-            torch.save(ckpt, last)
+            if best_fitness:
+                torch.save(ckpt, best)
+            else:
+                torch.save(ckpt, last)
             del ckpt
 
         if stop:
