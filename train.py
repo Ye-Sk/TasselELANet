@@ -211,8 +211,7 @@ def trainer(opt):
 
             if best_fitness:
                 torch.save(ckpt, best)
-            else:
-                torch.save(ckpt, last)
+            torch.save(ckpt, last)
             del ckpt
 
         if stop:
