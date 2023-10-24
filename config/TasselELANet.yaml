@@ -43,7 +43,7 @@ Decoder:
    [[-1, -2, -3, -4], 1, Concat, [1]],
    [-1, 1, Conv, [128, 1, 1]],  # 28
 
-   [-1, 1, CARAFE, [128, 3, 2]],  # kernel_size=3, up_factor=5
+   [-1, 1, CARAFE, [128, 3, 2]],  # kernel_size=3, up_factor=2
    [-1, 1, Mlt_ECA, [128]],  # attention
    [[-1, 14], 1, Concat, [1]],  # 31
 
