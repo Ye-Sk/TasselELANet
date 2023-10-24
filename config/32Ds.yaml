@@ -51,7 +51,7 @@ Decoder:
    [[-1, -2, -3, -4], 1, Concat, [1]],
    [-1, 1, Conv, [256, 1, 1]],  # 35
 
-   [-1, 1, CARAFE, [256, 3, 2]],  #  kernel_size=3, up_factor=5
+   [-1, 1, CARAFE, [256, 3, 2]],  #  kernel_size=3, up_factor=2
    [-1, 1, Mlt_ECA, [256]],   #  attention
    [[-1, 21], 1, Concat, [1]],  # 38
 
