@@ -4,7 +4,7 @@
 </p>  
 
 **The resources in this repository are implemented in this paper：**  
-[___TasselELANet: A Vision Foundation Model for Plant Recognition  with Efficient Layer Aggregation Network___](https://v.qq.com/x/cover/mpqzavrt4qvdstw/d00148c52qt.html?ptag=360kan.cartoon.free)
+[___TasselELANet: A Vision Foundation Model for Plant Recognition  with Efficient Layer Aggregation Network___](https://github.com/Ye-Sk/TasselELANet.git)
 
 ## Quantitative results
 |Dataset|AP<sub>50</sub>|AP<sub>50-95</sub>|MAE|RMSE|R<sup>2</sup>|
