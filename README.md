@@ -81,7 +81,7 @@ $ python infer.py --count --data config/dataset/MTDC.yaml    # count maize tasse
 ~~~
 @article{ye2023TasselELANet,  
   title={TasselELANet: A Vision Foundation Model for Plant Recognition with Efficient Layer Aggregation Network},  
-  author={Ye, Jianxiong and Yu, Zhenghong and Wang, Yangxu and Lu, Dunlu and Zhou, Huabing and Shengjie Liufu}, 
+  author={Ye, Jianxiong and Yu, Zhenghong and Lin, Jiewu and Li, Hongyuan and Lin, Lisheng}, 
   year={2023}
 }
 ~~~
