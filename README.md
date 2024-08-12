@@ -4,7 +4,7 @@
 </p>  
 
 **The resources in this repository are implemented in this paper：**  
-[___Vision Foundation Model for Agricultural Applications with Efficient Layer Aggregation Network___](https://github.com/Ye-Sk/TasselELANet.git)
+[___Vision Foundation Model for Agricultural Applications with Efficient Layer Aggregation Network___](https://www.sciencedirect.com/science/article/abs/pii/S0957417424018396)
 
 ## Quantitative results
 |Dataset|AP<sub>50</sub>|AP<sub>50-95</sub>|MAE|RMSE|R<sup>2</sup>|
@@ -79,9 +79,12 @@ $ python infer.py --count --data config/dataset/MTDC.yaml    # count maize tasse
 ## Citation
 #### If you find this work or code useful for your research, please cite this, Thank you!🤗
 ~~~
-@article{ye2023TasselELANet,  
+@ARTICLE{YE2024124972,  
   title={Vision Foundation Model for Agricultural Applications with Efficient Layer Aggregation Network},  
-  author={Ye, Jianxiong and Yu, Zhenghong and Lin, Jiewu and Li, Hongyuan and Lin, Lisheng}, 
-  year={2024}
+  author={Ye, Jianxiong and Yu, Zhenghong and Lin, Jiewu and Li, Hongyuan and Lin, Lisheng},
+  journal={Expert Systems with Applications},
+  pages={124972},
+  year={2024},
+  doi={10.1016/j.eswa.2024.124972}
 }
 ~~~
