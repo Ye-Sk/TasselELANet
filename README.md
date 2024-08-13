@@ -83,6 +83,7 @@ $ python infer.py --count --data config/dataset/MTDC.yaml    # count maize tasse
   title={Vision Foundation Model for Agricultural Applications with Efficient Layer Aggregation Network},  
   author={Ye, Jianxiong and Yu, Zhenghong and Lin, Jiewu and Li, Hongyuan and Lin, Lisheng},
   journal={Expert Systems with Applications},
+  volume={257},
   pages={124972},
   year={2024},
   doi={10.1016/j.eswa.2024.124972}
