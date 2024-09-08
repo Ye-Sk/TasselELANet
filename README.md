@@ -4,7 +4,7 @@
 </p>  
 
 **The resources in this repository are implemented in this paper：**  
-[___Vision Foundation Model for Agricultural Applications with Efficient Layer Aggregation Network___](https://www.sciencedirect.com/science/article/abs/pii/S0957417424018396)
+[___Vision Foundation Model for Agricultural Applications with Efficient Layer Aggregation Network___](https://authors.elsevier.com/c/1jbEK3PiGTTTlS)
 
 ## Quantitative results
 |Dataset|AP<sub>50</sub>|AP<sub>50-95</sub>|MAE|RMSE|R<sup>2</sup>|
