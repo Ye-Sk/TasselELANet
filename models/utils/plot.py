@@ -214,5 +214,5 @@ def ap_eval(tp, conf, pred_cls, target_cls, plot=False, save_dir='.', names=(), 
     if plot:
         asyncio.run(plot_tp_fp_curve(tp, fp, Path(save_dir) / f'TP_FP_curve.png'))
 
-    return f1, p, r, f1, ap, unique_classes.astype(int)
+    return p, r, f1, ap, unique_classes.astype(int)
 
