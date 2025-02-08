@@ -146,7 +146,7 @@ def run(
     # Compute metrics
     stats = [torch.cat(x, 0).cpu().numpy() for x in zip(*stats)]  # to numpy
     if len(stats) and stats[0].any():
-        f1, p, r, f1, ap, ap_class = ap_eval(*stats, plot=plots, save_dir=save_dir, names=names)
+        p, r, f1, ap, ap_class = ap_eval(*stats, plot=plots, save_dir=save_dir, names=names)
         ap50, ap = ap[:, 0], ap.mean(1)  # AP@0.5, AP@0.5:0.95
         f1, mp, mr, map50, map = f1.mean(), p.mean(), r.mean(), ap50.mean(), ap.mean()
     nt = np.bincount(stats[3].astype(int), minlength=nc)  # number of targets per class
